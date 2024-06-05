@@ -27,6 +27,7 @@
 #include "ndn-cxx/util/time.hpp"
 
 #include "ns3/simulator.h"
+#include <optional>
 
 #include <set>
 
