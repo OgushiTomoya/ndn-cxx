@@ -82,7 +82,8 @@ def check_openssl(self, *k, **kw):
     except:
         self.fatal('OpenSSL version file is not found or is not usable')
 
-    atleast_version = kw.get('atleast_version', 0)
+    #atleast_version = kw.get('atleast_version', 0)
+    atleast_version = 0x10100000
     if int(version, 16) < atleast_version:
         self.fatal('The version of OpenSSL is too old\n'
                    'Please upgrade your distribution or manually install a newer version of OpenSSL')
